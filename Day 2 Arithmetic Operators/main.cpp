@@ -16,7 +16,18 @@ string rtrim(const string &);
 
 void solve(double meal_cost, int tip_percent, int tax_percent) {
     
-    cout << round(meal_cost+(meal_cost*(double)tip_percent/100.0)+(meal_cost*(double)tax_percent/100.0));
+   //cout << round(meal_cost+(meal_cost*(double)tip_percent/100)+(meal_cost*(double)tax_percent/100));
+    
+    //printf("%.0f", round(meal_cost+(meal_cost*(double)tip_percent/100)+(meal_cost*(double)tax_percent/100)));
+    
+    //printf("%d", (int)((meal_cost+(meal_cost*(double)tip_percent/100)+(meal_cost*(double)tax_percent/100))+.5));
+    
+    //printf("%d",(int)(meal_cost+meal_cost*(tip_percent+tax_percent)/100+0.5));
+    
+    printf("%d",(int)(((100+tip_percent+tax_percent)/100.0)*meal_cost+0.5));
+    
+    //printf("%d",static_cast<int>(meal_cost*(1+(tip_percent+tax_percent)/100.0)+0.5));
+
     
     
 }
